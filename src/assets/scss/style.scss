@@ -1,3 +1,10 @@
-body {
-    background: blue;
-}
+// Settings
+@import './settings/colors.scss';
+@import './settings/breakpoints.scss';
+@import './settings/typography.scss';
+
+// Elements
+@import './elements/base.scss';
+
+// Components
+@import './components/header.scss';
