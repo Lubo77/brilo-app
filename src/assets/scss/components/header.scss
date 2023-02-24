@@ -6,6 +6,7 @@ header {
     z-index: 10;
     background: $green;
     height: 30px;
+    top: 0;
 }
 
 .container-menu {
@@ -109,7 +110,7 @@ header {
     content: ' ';
     height: 35px;
     width: 4px;
-    background: $violet-1;
+    background: $white;
     transition: all 0.3s ease;
   }
 
@@ -173,7 +174,7 @@ header {
     }
 
     .menu > .menu-item > a {
-        color: $violet-1;
+        color: $white;
     }
 
     .menu > .menu-item > a:hover {

@@ -1,0 +1,62 @@
+.container-hero {
+    margin: auto;
+    max-width: 1200px;
+    height: fit-content;
+    width: 90%;
+    margin-top: 100px;
+
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 40px;
+
+    @media (min-width: $lg) {
+        flex-direction: row;
+        padding: 30px;
+        gap: 150px;
+        justify-content: space-between;
+    }
+}
+
+.hero_left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (min-width: $md) {
+        padding-top: 40px;
+    }
+}
+
+.hero_left-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: $white;
+}
+
+.hero_left-perex {
+    color: $white;
+    font-size: 1rem;
+}
+
+.hero_left-button {
+    text-transform: uppercase;
+    color: $white;
+}
+
+.hero_right {
+    height: 350px;
+
+    @media (min-width: $md) {
+        height: 400px;
+    }
+
+    img {
+        width: auto;
+        height: 100%;
+        object-fit: cover; 
+    }
+}
