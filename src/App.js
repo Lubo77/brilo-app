@@ -1,8 +1,20 @@
 import './assets/scss/style.scss';
 import Header from './components/Header'
-import profileFoto from './assets/img/profile-foto.jpg'
+import profileImg from './assets/img/profile-foto.jpg'
+import data from './Data.js'
+import Box from "./components/Box"
 
 function App() {
+
+  const projects = data.map(item => {
+    return (
+      <Box
+        key={item.id}
+        item={item}
+      />
+    )
+  }) 
+
   return (
     <div className="App">
       <Header/>
@@ -14,10 +26,20 @@ function App() {
             <div className='hero_left-button'>learn more</div>
           </div>
           <div className='hero_right'>
-            <img src={profileFoto} alt='profile foto'/>
+            <img src={profileImg} alt='profile foto'/>
           </div>
         </div>
       </div>
+      <div className="container-boxes">
+        <h1 className="section-title">what I did</h1>
+        <div className="boxes-grid">
+            {projects}
+        </div>
+      </div>
+      
+      <footer>
+          <p>© 2023 jack jackson</p>
+      </footer>
     </div>
   );
 }

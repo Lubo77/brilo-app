@@ -4,7 +4,7 @@ header {
     padding-bottom: 15px;
     position: fixed;
     z-index: 10;
-    background: $green;
+    background: $green-1;
     height: 30px;
     top: 0;
 }
@@ -110,7 +110,7 @@ header {
     content: ' ';
     height: 35px;
     width: 4px;
-    background: $white;
+    background: $green-1;
     transition: all 0.3s ease;
   }
 
@@ -174,7 +174,7 @@ header {
     }
 
     .menu > .menu-item > a {
-        color: $white;
+        color: $green-1;
     }
 
     .menu > .menu-item > a:hover {

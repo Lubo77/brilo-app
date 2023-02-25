@@ -1,0 +1,13 @@
+footer {
+    background: $gray-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-transform: uppercase;
+
+    & p {
+        color: $white;
+        font-size: 16px;
+    }
+}
