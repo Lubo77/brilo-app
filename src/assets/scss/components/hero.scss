@@ -10,7 +10,6 @@
 .hero {
     display: flex;
     flex-direction: column;
-    padding: 15px;
     gap: 40px;
 
     @media (min-width: $lg) {
@@ -21,29 +20,29 @@
     }
 }
 
-.hero_left {
+.hero__left {
     display: flex;
     flex-direction: column;
-    gap: 20px;
 
     @media (min-width: $md) {
         padding-top: 40px;
     }
 }
 
-.hero_left-title {
+.hero__left-title {
     text-transform: uppercase;
     font-size: 2rem;
     color: $gray-3;
     font-weight: $fw-regular;
 }
 
-.hero_left-perex {
+.hero__left-perex {
     color: $white;
     font-size: 1rem;
+    margin-top: 25px;
 }
 
-.hero_left-button {
+.hero__left-button {
     text-transform: uppercase;
     color: $white;
     background: $green-1;
@@ -51,22 +50,27 @@
     width: fit-content;
     transition: all 0.3s ease;
     cursor: pointer;
+    margin-top: 35px;
 
     &:hover {
-        background: $green-2;
+        background: $gray-2;
     }
 }
 
-.hero_right {
-    height: 350px;
+.hero__right {
+    width: fit-content;
 
     @media (min-width: $md) {
         height: 400px;
     }
 
     img {
-        width: auto;
-        height: 100%;
+        width: 100%;
         object-fit: cover; 
+
+        @media (min-width: $md) {
+            height: 100%;
+            width: auto;
+        }
     }
 }

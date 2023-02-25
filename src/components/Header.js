@@ -9,7 +9,6 @@ export default function Header() {
     const toggleNav = () => {
         setNavMenu(navMenu => !navMenu)
         setMenuOverlay(menuOverlay => !menuOverlay)
-        console.log('TOGGLE')
     }
 
     let toggleNavMenu = navMenu ? ' open' : ''

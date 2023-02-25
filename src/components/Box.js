@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Box(props) {
     return (
-        <a href="#" className="box box--person" target="_blank">
+        <a href="#" className="box" target="_blank">
             <div className="box__image">
                 <img src={props.item.image} alt="box image" />
             </div>
