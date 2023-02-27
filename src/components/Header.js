@@ -3,16 +3,14 @@ import { useState } from 'react';
 
 export default function Header() {
 
-    const [navMenu, setNavMenu] = useState(false)
-    const [menuOverlay, setMenuOverlay] = useState(false)
+    const [isMenuOpen, setIsMenuOpen] = useState(false) 
 
     const toggleNav = () => {
-        setNavMenu(navMenu => !navMenu)
-        setMenuOverlay(menuOverlay => !menuOverlay)
+        setIsMenuOpen(isMenuOpen => !isMenuOpen)
     }
 
-    let toggleNavMenu = navMenu ? ' open' : ''
-    let toggleMenuOverlay = menuOverlay ? ' active' : ''
+    let toggleNavMenu = isMenuOpen ? ' open' : ''
+    let toggleMenuOverlay = isMenuOpen ? ' active' : ''
 
     return (
         <header>
